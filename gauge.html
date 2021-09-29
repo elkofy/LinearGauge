@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jsTree test</title>
+    <!-- 2 load the theme CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css"
+    />
+  </head>
+  <body style="background-color: aqua;">
+    <div id="values" style="width: 200px; clear: both">
+      <label for="name">&nbsp;Performance:&nbsp;</label>
+      <input id="perf" value="34" type="number" />
+
+      <label for="etreg">&nbsp;Ecart-Type Regional:&nbsp;</label>
+      <input id="etreg" value="4.6" type="number" />
+
+      <label for="etinter">&nbsp;Ecart-Type international:&nbsp;</label>
+      <input id="etinter" value="5.7" type="number" />
+
+      <label for="reg">&nbsp; niveau regional:&nbsp;</label>
+      <input id="reg" value="33.1" type="number" />
+
+      <label for="nat"> &nbsp; niveau national:&nbsp;</label>
+      <input id="nat" value="35.5" type="number" />
+
+      <label for="reg"> &nbsp; niveau international:&nbsp;</label>
+      <input id="inter" value="36.7" type="number" />
+      <br />
+      <button onclick="gradientgauge()">Update</button>
+    </div>
+
+    <!-- 3 setup a container element -->
+
+    <!-- 4 include the jQuery library -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <!-- 5 include the minified jstree source -->
+    <script src="jauge.js"></script>
+    <br />
+    <br />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      /*// Chart code will go here.
+ Performance:  
+31
+  Ecart-Type Regional:  
+4.6
+  Ecart-Type international:  
+value="5.7"
+   niveau regional:  
+value="33.1"
+   niveau national:  
+value="35.5"
+   niveau international:  
+value="36.7"
+
+
+    var ctx = document.getElementById('chart');
+
+var myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Risk Level'],
+    datasets: [
+      {
+        label: 'Low',
+        data: [67.8],
+        backgroundColor: '#D6E9C6',
+        barThickness: 10
+
+      },
+      {
+        label: 'Moderate',
+        data: [20.7],
+        backgroundColor: '#FAEBCC',
+        barThickness: 10
+
+      },
+      {
+        label: 'High',
+        data: [11.4],
+        backgroundColor: '#EBCCD1',
+        barThickness: 50
+
+      },
+
+    ]
+  },
+  options: {
+    indexAxis: 'y',
+
+    scales: {
+      yAxes: [{
+            gridLines: {
+              drawBorder: false,
+              display: false,
+            }
+        }],
+      x: {
+         stacked: true 
+        },
+      y: {
+         stacked: true 
+        },
+        
+    }
+  }
+});*/
+    </script>
+  </body>
+</html>
