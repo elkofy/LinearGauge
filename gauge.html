@@ -9,13 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css"
     />
   </head>
-  <body style="background-color: aqua;">
-    <div id="values" style="width: 200px; clear: both">
+  <body style="background-color: #000040  ;">
+    <div id="values" style="width: 200px; clear: both;color: aliceblue;">
       <label for="name">&nbsp;Performance:&nbsp;</label>
       <input id="perf" value="34" type="number" />
 
-      <label for="etreg">&nbsp;Ecart-Type Regional:&nbsp;</label>
-      <input id="etreg" value="4.6" type="number" />
+      <label for="record">&nbsp;Record:&nbsp;</label>
+      <input id="record" value="46" type="number" />
 
       <label for="etinter">&nbsp;Ecart-Type international:&nbsp;</label>
       <input id="etinter" value="5.7" type="number" />
@@ -29,9 +29,14 @@
       <label for="reg"> &nbsp; niveau international:&nbsp;</label>
       <input id="inter" value="36.7" type="number" />
       <br />
+      <br />
+
       <button onclick="gradientgauge()">Update</button>
     </div>
+    
+    <div id="legende" >
 
+    </div>
     <!-- 3 setup a container element -->
 
     <!-- 4 include the jQuery library -->
@@ -39,8 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <!-- 5 include the minified jstree source -->
     <script src="jauge.js"></script>
-    <br />
-    <br />
+ 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -58,7 +62,8 @@ value="33.1"
 value="35.5"
    niveau international:  
 value="36.7"
-
+&éçBD-
+129BD6
 
     var ctx = document.getElementById('chart');
 
