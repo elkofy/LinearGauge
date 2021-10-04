@@ -21,14 +21,33 @@ var refs = {
 
   var newText2 = document.createElementNS(svgns,"text");
 newText2.setAttributeNS(null,"x",130);     
-newText2.setAttributeNS(null,"y",100); 
+newText2.setAttributeNS(null,"y",87); 
 newText2.setAttributeNS(null,"font-size","12");
 newText2.setAttributeNS(null,"font-family","Montserrat");
 newText2.setAttributeNS(null,"fill","white");
+newText2.setAttributeNS(null,"font-weight","800");
+
+newText2.setAttributeNS(null,"fill","white");
+newText2.classList.add('shadow');
 
 
 var textNode2 = document.createTextNode(refs.Reg.toString());
 newText2.appendChild(textNode2);
+
+var txtindic = document.createElementNS(svgns,"text");
+txtindic.setAttributeNS(null,"x",120);
+txtindic.setAttributeNS(null,"y",50);
+txtindic.setAttributeNS(null,"font-size","12");
+txtindic.setAttributeNS(null,"font-family","Montserrat");
+txtindic.setAttributeNS(null,"font-weight","800");
+
+txtindic.setAttributeNS(null,"fill","white");
+txtindic.classList.add('shadow');
+
+
+var txtindicNode = document.createTextNode('Régional');
+txtindic.appendChild(txtindicNode);
+
 var array = arr = [
   [ cursorvalue   ,35   ], 
   [ cursorvalue-8 ,19   ],
@@ -43,6 +62,7 @@ var array = arr = [
   }
   polygon.setAttributeNS(null,"fill","white");
   polygon.setAttributeNS(null,"stroke","black");
+
   let stops = [
     {
       color: "#ffffff",
@@ -61,6 +81,7 @@ var array = arr = [
       offset: "150%",
     },
   ];
+
 
   shapeC.x1.baseVal.value = 140;
   shapeC.x2.baseVal.value = 140;
@@ -81,16 +102,16 @@ var array = arr = [
   shapeMK2.x1.baseVal.value = 140;
   shapeMK2.x2.baseVal.value = 140;
 
-  shapeMK.y1.baseVal.value = 69;
-  shapeMK.y2.baseVal.value = 86;
+  shapeMK.y1.baseVal.value = 68;
+  shapeMK.y2.baseVal.value = 75;
   shapeMK2.y1.baseVal.value = 70;
   shapeMK2.y2.baseVal.value = 85;
 
   shapeMK.setAttribute("stroke", "black");
-  shapeMK.setAttribute("stroke-width", "8");
+  shapeMK.setAttribute("stroke-width", "2");
 
   shapeMK2.setAttribute("stroke", "white");
-  shapeMK2.setAttribute("stroke-width", "5");
+  shapeMK2.setAttribute("stroke-width", "0");
 
 
   for (var i = 0, length = stops.length; i < length; i++) {
@@ -115,9 +136,7 @@ var array = arr = [
   let strR = calcR.toString() + "px";
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
-  shapeR.setAttribute("stroke", "black");
 
-  shapeR.setAttribute("stroke-width", "2");
 
   shapeR.x.baseVal.value = 0;
   shapeR.ry.baseVal.value = 2;
@@ -132,6 +151,10 @@ var array = arr = [
   svg1.appendChild(shapeMK);
   svg1.appendChild(shapeMK2);
   svg1.appendChild(newText2);
+  svg1.appendChild(txtindic);
+
+  
+
   svg1.setAttribute("width", "220px");
   svg1.setAttribute("height", "105px");
 
@@ -171,21 +194,57 @@ var refs = {
 
   var newText = document.createElementNS(svgns,"text");
   newText.setAttributeNS(null,"x",50);     
-newText.setAttributeNS(null,"y",100); 
+newText.setAttributeNS(null,"y",87); 
 newText.setAttributeNS(null,"font-size","12");
 newText.setAttributeNS(null,"font-family","Montserrat");
-newText.setAttributeNS(null,"fill","white");
+newText.setAttributeNS(null,"font-weight","800");
 
+newText.setAttributeNS(null,"fill","white");
+newText.classList.add('shadow');
+
+
+var txtindic = document.createElementNS(svgns,"text");
+txtindic.setAttributeNS(null,"x",35);     
+txtindic.setAttributeNS(null,"y",54); 
+txtindic.setAttributeNS(null,"font-size","11");
+txtindic.setAttributeNS(null,"font-family","Montserrat");
+txtindic.setAttributeNS(null,"font-weight","800");
+
+txtindic.setAttributeNS(null,"fill","white");
+txtindic.classList.add('shadow');
+
+
+var txtindicNode = document.createTextNode('Régional');
+txtindic.appendChild(txtindicNode);
+
+
+var txtindic2 = document.createElementNS(svgns,"text");
+txtindic2.setAttributeNS(null,"x",120);
+txtindic2.setAttributeNS(null,"y",54);
+txtindic2.setAttributeNS(null,"font-size","11");
+txtindic2.setAttributeNS(null,"font-family","Montserrat");
+txtindic2.setAttributeNS(null,"font-weight","800");
+
+txtindic2.setAttributeNS(null,"fill","white");
+txtindic2.classList.add('shadow');
+
+
+var txtindic2Node = document.createTextNode('National');
+txtindic2.appendChild(txtindic2Node);
 
 var textNode = document.createTextNode(refs.Reg.toString() );
 newText.appendChild(textNode);
 
 var newText2 = document.createElementNS(svgns,"text");
 newText2.setAttributeNS(null,"x",130);     
-newText2.setAttributeNS(null,"y",100); 
+newText2.setAttributeNS(null,"y",87); 
 newText2.setAttributeNS(null,"font-size","12");
 newText2.setAttributeNS(null,"font-family","Montserrat");
 newText2.setAttributeNS(null,"fill","white");
+newText2.setAttributeNS(null,"font-weight","800");
+
+newText2.setAttributeNS(null,"fill","white");
+newText2.classList.add('shadow');
 
 
 var textNode2 = document.createTextNode(refs.Nat.toString());
@@ -238,16 +297,16 @@ newText2.appendChild(textNode2);
   shapeC2.x1.baseVal.value = 60;
   shapeC2.x2.baseVal.value = 60;
 
-  shapeC.y1.baseVal.value = 69;
-  shapeC.y2.baseVal.value = 86;
+  shapeC.y1.baseVal.value = 68;
+  shapeC.y2.baseVal.value = 75;
   shapeC2.y1.baseVal.value = 70;
   shapeC2.y2.baseVal.value = 85;
 
   shapeC.setAttribute("stroke", "black");
-  shapeC.setAttribute("stroke-width", "8");
+  shapeC.setAttribute("stroke-width", "3");
 
   shapeC2.setAttribute("stroke", "white");
-  shapeC2.setAttribute("stroke-width", "5");
+  shapeC2.setAttribute("stroke-width", "0");
 
   shapecurs2_.x1.baseVal.value = 140;
   shapecurs2_.x2.baseVal.value = 140;
@@ -255,16 +314,16 @@ newText2.appendChild(textNode2);
   shapecurs2_2.x1.baseVal.value = 140;
   shapecurs2_2.x2.baseVal.value = 140;
 
-  shapecurs2_.y1.baseVal.value = 69;
-  shapecurs2_.y2.baseVal.value = 86;
+  shapecurs2_.y1.baseVal.value = 68;
+  shapecurs2_.y2.baseVal.value = 75;
   shapecurs2_2.y1.baseVal.value = 70;
-  shapecurs2_2.y2.baseVal.value = 85;
+  shapecurs2_2.y2.baseVal.value = 70;
 
   shapecurs2_.setAttribute("stroke", "black");
-  shapecurs2_.setAttribute("stroke-width", "8");
+  shapecurs2_.setAttribute("stroke-width", "3");
 
   shapecurs2_2.setAttribute("stroke", "white");
-  shapecurs2_2.setAttribute("stroke-width", "5");
+  shapecurs2_2.setAttribute("stroke-width", "0");
 
 
 
@@ -291,9 +350,6 @@ newText2.appendChild(textNode2);
   console.log(strR);
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
-  shapeR.setAttribute("stroke", "black");
-
-  shapeR.setAttribute("stroke-width", "2");
 
   shapeR.x.baseVal.value = 0;
   shapeR.ry.baseVal.value = 2;
@@ -311,6 +367,8 @@ newText2.appendChild(textNode2);
   svg1.appendChild(shapeC2);
   svg1.appendChild(shapecurs2_);
   svg1.appendChild(shapecurs2_2);
+  svg1.appendChild(txtindic);
+  svg1.appendChild(txtindic2);
 
   svg1.appendChild(newText2);
   svg1.appendChild(newText);
@@ -352,17 +410,50 @@ var refs = {
   console.log('cursorvalue',cursorvalue)
   var shapeC = document.createElementNS(svgns, "line");
   var shapeC2 = document.createElementNS(svgns, "line");
-  var shapeRindic = document.createElementNS(svgns, "line");
   var shapecurs2_ = document.createElementNS(svgns, "line");
   var shapecurs2_2 = document.createElementNS(svgns, "line");
 
 
   var newText = document.createElementNS(svgns,"text");
   newText.setAttributeNS(null,"x",50);     
-newText.setAttributeNS(null,"y",100); 
+newText.setAttributeNS(null,"y",87); 
 newText.setAttributeNS(null,"font-size","12");
 newText.setAttributeNS(null,"font-family","Montserrat");
 newText.setAttributeNS(null,"fill","white");
+newText.setAttributeNS(null,"font-weight","800");
+newText.setAttributeNS(null,"fill","white");
+newText.classList.add('shadow');
+
+
+var txtindic = document.createElementNS(svgns,"text");
+txtindic.setAttributeNS(null,"x",35);     
+txtindic.setAttributeNS(null,"y",54); 
+txtindic.setAttributeNS(null,"font-size","11");
+txtindic.setAttributeNS(null,"font-family","Montserrat");
+txtindic.setAttributeNS(null,"font-weight","800");
+
+txtindic.setAttributeNS(null,"fill","white");
+txtindic.classList.add('shadow');
+
+
+var txtindicNode = document.createTextNode('National');
+txtindic.appendChild(txtindicNode);
+
+
+var txtindic2 = document.createElementNS(svgns,"text");
+txtindic2.setAttributeNS(null,"x",110);     
+txtindic2.setAttributeNS(null,"y",54); 
+txtindic2.setAttributeNS(null,"font-size","11");
+txtindic2.setAttributeNS(null,"font-family","Montserrat");
+txtindic2.setAttributeNS(null,"font-weight","800");
+
+txtindic2.setAttributeNS(null,"fill","white");
+txtindic2.classList.add('shadow');
+
+
+
+var txtindic2Node = document.createTextNode('International');
+txtindic2.appendChild(txtindic2Node);
 
 
 var textNode = document.createTextNode(refs.Nat.toString() );
@@ -370,10 +461,13 @@ newText.appendChild(textNode);
 
 var newText2 = document.createElementNS(svgns,"text");
 newText2.setAttributeNS(null,"x",130);     
-newText2.setAttributeNS(null,"y",100); 
+newText2.setAttributeNS(null,"y",87); 
 newText2.setAttributeNS(null,"font-size","12");
 newText2.setAttributeNS(null,"font-family","Montserrat");
-newText2.setAttributeNS(null,"fill","white");
+txtindic2.setAttributeNS(null,"font-weight","800");
+txtindic2.setAttributeNS(null,"fill","white");
+txtindic2.classList.add('shadow');
+
 
 
 var textNode2 = document.createTextNode(refs.Inter.toString());
@@ -410,13 +504,9 @@ newText2.appendChild(textNode2);
       offset: "150%",
     },
   ];
-  console.log(stops)
 
   //shapeC.x1.baseVal.value = 140;
   //shapeC.x2.baseVal.value = 140;
-
-  console.log( (140*Number.parseInt(refs.Nat) )/Number.parseInt(refs.Reg))
-  console.log('perf',refs.Nat)
 
   shapeC.x1.baseVal.value = 60;
   shapeC.x2.baseVal.value = 60;
@@ -425,15 +515,15 @@ newText2.appendChild(textNode2);
   shapeC2.x2.baseVal.value = 60;
 
   shapeC.y1.baseVal.value = 69;
-  shapeC.y2.baseVal.value = 86;
+  shapeC.y2.baseVal.value = 75;
   shapeC2.y1.baseVal.value = 70;
   shapeC2.y2.baseVal.value = 85;
 
   shapeC.setAttribute("stroke", "black");
-  shapeC.setAttribute("stroke-width", "8");
+  shapeC.setAttribute("stroke-width", "3");
 
   shapeC2.setAttribute("stroke", "white");
-  shapeC2.setAttribute("stroke-width", "5");
+  shapeC2.setAttribute("stroke-width", "0");
 
   shapecurs2_.x1.baseVal.value = 140;
   shapecurs2_.x2.baseVal.value = 140;
@@ -442,15 +532,15 @@ newText2.appendChild(textNode2);
   shapecurs2_2.x2.baseVal.value = 140;
 
   shapecurs2_.y1.baseVal.value = 69;
-  shapecurs2_.y2.baseVal.value = 86;
+  shapecurs2_.y2.baseVal.value = 75;
   shapecurs2_2.y1.baseVal.value = 70;
-  shapecurs2_2.y2.baseVal.value = 85;
+  shapecurs2_2.y2.baseVal.value = 75;
 
   shapecurs2_.setAttribute("stroke", "black");
-  shapecurs2_.setAttribute("stroke-width", "8");
+  shapecurs2_.setAttribute("stroke-width", "3");
 
   shapecurs2_2.setAttribute("stroke", "white");
-  shapecurs2_2.setAttribute("stroke-width", "5");
+  shapecurs2_2.setAttribute("stroke-width", "0");
 
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
@@ -475,9 +565,7 @@ newText2.appendChild(textNode2);
   console.log(strR);
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
-  shapeR.setAttribute("stroke", "black");
 
-  shapeR.setAttribute("stroke-width", "2");
 
   shapeR.x.baseVal.value = 0;
   shapeR.ry.baseVal.value = 2;
@@ -495,6 +583,10 @@ newText2.appendChild(textNode2);
   svg1.appendChild(shapecurs2_2);
   svg1.appendChild(newText);
   svg1.appendChild(newText2);
+  svg1.appendChild(txtindic);
+  svg1.appendChild(txtindic2);
+
+
 
   svg1.setAttribute("width", "220px");
   svg1.setAttribute("height", "105px");
@@ -516,8 +608,8 @@ var refs = {
   Nat: document.getElementById("nat").value,
   Inter: document.getElementById("inter").value,
   Record: document.getElementById("record").value,
-
 };
+
   var svgns = "http://www.w3.org/2000/svg";
 
   var newDiv = document.createElement("div");
@@ -532,10 +624,30 @@ var refs = {
 
   var newText = document.createElementNS(svgns,"text");
   newText.setAttributeNS(null,"x",50);     
-newText.setAttributeNS(null,"y",100); 
+newText.setAttributeNS(null,"y",87); 
 newText.setAttributeNS(null,"font-size","12");
 newText.setAttributeNS(null,"font-family","Montserrat");
+newText.setAttributeNS(null,"font-weight","800");
 newText.setAttributeNS(null,"fill","white");
+newText.classList.add('shadow');
+
+
+
+
+var txtindic = document.createElementNS(svgns,"text");
+txtindic.setAttributeNS(null,"x",30);     
+txtindic.setAttributeNS(null,"y",54); 
+txtindic.setAttributeNS(null,"font-size","11");
+txtindic.setAttributeNS(null,"font-family","Montserrat");
+txtindic.setAttributeNS(null,"font-weight","800");
+txtindic.setAttributeNS(null,"fill","white");
+txtindic.classList.add('shadow');
+
+
+
+
+var txtindicNode = document.createTextNode('International');
+txtindic.appendChild(txtindicNode);
 
 
 var textNode = document.createTextNode(refs.Inter.toString() );
@@ -553,6 +665,7 @@ newText.appendChild(textNode);
     polygon.points.appendItem(point);
   }
 
+ 
   let stops = [
     {
       color: "#ff976b",
@@ -572,12 +685,6 @@ newText.appendChild(textNode);
       offset: "100%",
     },
   ];
-  console.log(stops)
-
-  console.log( (140*Number.parseInt(refs.Nat) )/Number.parseInt(refs.Reg))
-  console.log('perf',refs.Nat)
-
-
   shapeC.x1.baseVal.value = 60;
   shapeC.x2.baseVal.value = 60;
 
@@ -585,15 +692,15 @@ newText.appendChild(textNode);
   shapeC2.x2.baseVal.value = 60;
 
   shapeC.y1.baseVal.value = 69;
-  shapeC.y2.baseVal.value = 86;
+  shapeC.y2.baseVal.value = 75;
   shapeC2.y1.baseVal.value = 70;
   shapeC2.y2.baseVal.value = 85;
 
   shapeC.setAttribute("stroke", "black");
-  shapeC.setAttribute("stroke-width", "8");
+  shapeC.setAttribute("stroke-width", "3");
 
   shapeC2.setAttribute("stroke", "white");
-  shapeC2.setAttribute("stroke-width", "5");
+  shapeC2.setAttribute("stroke-width", "0");
 
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
@@ -618,9 +725,7 @@ newText.appendChild(textNode);
   console.log(strR);
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
-  shapeR.setAttribute("stroke", "black");
 
-  shapeR.setAttribute("stroke-width", "2");
 
   shapeR.x.baseVal.value = 0;
   shapeR.ry.baseVal.value = 2;
@@ -635,6 +740,7 @@ newText.appendChild(textNode);
   svg1.appendChild(shapeC);
   svg1.appendChild(shapeC2);
   svg1.appendChild(newText);
+  svg1.appendChild(txtindic);
 
   svg1.setAttribute("width", "220px");
   svg1.setAttribute("height", "105px");
@@ -642,12 +748,7 @@ newText.appendChild(textNode);
   newDiv.appendChild(svg1);
   var currentDiv = document.getElementById("div1");
   document.body.insertBefore(newDiv, currentDiv);
-  console.log('3')
   console.log('4')
-  
-
-
-
 
 }
 
@@ -681,7 +782,11 @@ function grad_five() {
     newText2.setAttributeNS(null,"font-family","Montserrat");
     newText2.setAttributeNS(null,"fill","white");
     
-    
+    newText2.setAttributeNS(null,"font-weight","700");
+
+    newText2.setAttributeNS(null,"fill","white");
+    newText2.classList.add('shadow');
+
     var textNode2 = document.createTextNode("Record !");
     newText2.appendChild(textNode2);
     var array = arr = [
@@ -690,13 +795,34 @@ function grad_five() {
       [ cursorvalue+8 ,19   ],
     ];
 
+
+    var txtindic = document.createElementNS(svgns,"text");
+    txtindic.setAttributeNS(null,"x",30);     
+    txtindic.setAttributeNS(null,"y",54); 
+    txtindic.setAttributeNS(null,"font-size","11");
+    txtindic.setAttributeNS(null,"font-family","Montserrat");
+    txtindic.setAttributeNS(null,"fill","black");
+    txtindic.setAttributeNS(null,"font-weight","800");
+
+txtindic.setAttributeNS(null,"fill","white");
+txtindic.classList.add('shadow');
+
+
+    
+    
+    var txtindicNode = document.createTextNode('International');
+    txtindic.appendChild(txtindicNode);
+    
+    
+
     var newText = document.createElementNS(svgns,"text");
     newText.setAttributeNS(null,"x",50);     
-  newText.setAttributeNS(null,"y",100); 
+  newText.setAttributeNS(null,"y",87); 
   newText.setAttributeNS(null,"font-size","12");
   newText.setAttributeNS(null,"font-family","Montserrat");
   newText.setAttributeNS(null,"fill","white");
-  
+  newText.setAttributeNS(null,"font-weight","800");
+  newText.classList.add('shadow');
   
   var textNode = document.createTextNode(refs.Inter.toString() );
   newText.appendChild(textNode);
@@ -714,16 +840,16 @@ function grad_five() {
   shapeC2.x1.baseVal.value = 60;
   shapeC2.x2.baseVal.value = 60;
 
-  shapeC.y1.baseVal.value = 69;
-  shapeC.y2.baseVal.value = 86;
+  shapeC.y1.baseVal.value = 68;
+  shapeC.y2.baseVal.value = 75;
   shapeC2.y1.baseVal.value = 70;
   shapeC2.y2.baseVal.value = 85;
 
   shapeC.setAttribute("stroke", "black");
-  shapeC.setAttribute("stroke-width", "8");
+  shapeC.setAttribute("stroke-width", "3");
 
   shapeC2.setAttribute("stroke", "white");
-  shapeC2.setAttribute("stroke-width", "5");
+  shapeC2.setAttribute("stroke-width", "0");
 
   let stops = [
     {
@@ -773,9 +899,7 @@ function grad_five() {
     console.log(strR);
     shapeR.setAttribute("width", strR);
     shapeR.setAttribute("height", "40px");
-    shapeR.setAttribute("stroke", "black");
-  
-    shapeR.setAttribute("stroke-width", "2");
+    
   
     shapeR.x.baseVal.value = 0;
     shapeR.ry.baseVal.value = 2;
@@ -791,6 +915,10 @@ function grad_five() {
     svg1.appendChild(shapeC);
     svg1.appendChild(shapeC2);
     svg1.appendChild(newText);
+    svg1.appendChild(txtindic);
+
+
+
     svg1.setAttribute("width", "260px");
     svg1.setAttribute("height", "105px");
   

@@ -1,0 +1,99 @@
+
+--------------Palette one ---------------
+let stops = [
+    {
+      color: "#ffffff",
+      offset: "0%",
+    },
+    {
+      color: "#ffffd9",
+      offset: "45%",
+    },
+        {
+      color: "#fffd00",
+      offset: "70%",
+    },
+    {
+      color: "#ffe341",
+      offset: "150%",
+    },
+  ];
+
+    let stops = [
+    {
+      color: "#fffe85",
+      offset: "0%",
+    },
+    {
+      color: "#F9F871",
+      offset: "30%",
+    },
+        {
+      color: "#FF814C",
+      offset: "70%",
+    },
+    {
+      color: "#ff7ab6",
+      offset: "150%",
+    },
+  ];
+
+
+  let stops = [
+    {
+      color: "#fc9c74",
+      offset: "0%",
+    },
+    {
+      color: "#FF814C",
+      offset: "30%",
+    },
+        {
+      color: "#FF00BC",
+      offset: "70%",
+    },
+    {
+      color: "#930391",
+      offset: "150%",
+    },
+  ];
+    let stops = [
+    {
+      color: "#ff976b",
+      offset: "0%",
+    },
+    {
+      color: "#FF00BC",
+      offset: "30%",
+    },
+    
+    {
+      color: "#3b056e",
+      offset: "70%",
+    },
+    {
+      color: "#3b056e",
+      offset: "100%",
+    },
+  ];
+  let stops = [
+    {
+      color: "#ff976b",
+      offset: "0%",
+    },
+    {
+      color: "#FF00BC",
+      offset: "30%",
+    },
+    
+    {
+      color: "#3b056e",
+      offset: "70%",
+    },
+    {
+      color: "#3b056e",
+      offset: "100%",
+    },
+  ];
+
+  --------------Palette two ---------------
