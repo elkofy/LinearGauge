@@ -464,9 +464,9 @@ newText2.setAttributeNS(null,"x",130);
 newText2.setAttributeNS(null,"y",87); 
 newText2.setAttributeNS(null,"font-size","12");
 newText2.setAttributeNS(null,"font-family","Montserrat");
-txtindic2.setAttributeNS(null,"font-weight","800");
-txtindic2.setAttributeNS(null,"fill","white");
-txtindic2.classList.add('shadow');
+newText2.setAttributeNS(null,"font-weight","800");
+newText2.setAttributeNS(null,"fill","white");
+newText2.classList.add('shadow');
 
 
 
@@ -519,7 +519,7 @@ newText2.appendChild(textNode2);
   shapeC2.y1.baseVal.value = 70;
   shapeC2.y2.baseVal.value = 85;
 
-  shapeC.setAttribute("stroke", "black");
+  shapeC.setAttribute("stroke", "white");
   shapeC.setAttribute("stroke-width", "3");
 
   shapeC2.setAttribute("stroke", "white");
@@ -536,7 +536,7 @@ newText2.appendChild(textNode2);
   shapecurs2_2.y1.baseVal.value = 70;
   shapecurs2_2.y2.baseVal.value = 75;
 
-  shapecurs2_.setAttribute("stroke", "black");
+  shapecurs2_.setAttribute("stroke", "white");
   shapecurs2_.setAttribute("stroke-width", "3");
 
   shapecurs2_2.setAttribute("stroke", "white");
@@ -621,27 +621,27 @@ var refs = {
   var cursorvalue = Math.round(((Number.parseInt(refs.Perf)-Number.parseInt(refs.Inter))*140)/(Number.parseInt(refs.Record)-Number.parseInt(refs.Inter))+60)
   var shapeC = document.createElementNS(svgns, "line");
   var shapeC2 = document.createElementNS(svgns, "line");
-
   var newText = document.createElementNS(svgns,"text");
+  
   newText.setAttributeNS(null,"x",50);     
-newText.setAttributeNS(null,"y",87); 
-newText.setAttributeNS(null,"font-size","12");
-newText.setAttributeNS(null,"font-family","Montserrat");
-newText.setAttributeNS(null,"font-weight","800");
-newText.setAttributeNS(null,"fill","white");
-newText.classList.add('shadow');
+  newText.setAttributeNS(null,"y",87); 
+  newText.setAttributeNS(null,"font-size","12");
+  newText.setAttributeNS(null,"font-family","Montserrat");
+  newText.setAttributeNS(null,"font-weight","800");
+  newText.setAttributeNS(null,"fill","white");
+  newText.classList.add('shadow');
 
 
 
 
-var txtindic = document.createElementNS(svgns,"text");
-txtindic.setAttributeNS(null,"x",30);     
-txtindic.setAttributeNS(null,"y",54); 
-txtindic.setAttributeNS(null,"font-size","11");
-txtindic.setAttributeNS(null,"font-family","Montserrat");
-txtindic.setAttributeNS(null,"font-weight","800");
-txtindic.setAttributeNS(null,"fill","white");
-txtindic.classList.add('shadow');
+  var txtindic = document.createElementNS(svgns,"text");
+  txtindic.setAttributeNS(null,"x",30);     
+  txtindic.setAttributeNS(null,"y",54); 
+  txtindic.setAttributeNS(null,"font-size","11");
+  txtindic.setAttributeNS(null,"font-family","Montserrat");
+  txtindic.setAttributeNS(null,"font-weight","800");
+  txtindic.setAttributeNS(null,"fill","white");
+  txtindic.classList.add('shadow');
 
 
 
