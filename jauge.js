@@ -38,7 +38,7 @@ function grad_one() {
   txtindic.setAttributeNS(null, "font-family", "Montserrat");
   txtindic.setAttributeNS(null, "font-weight", "800");
   txtindic.setAttributeNS(null, "fill", "white");
-  // txtindic.classList.add("shadow");
+  txtindic.classList.add("shadow");
   // txtindic.classList.add("text");
 
   var txtindicNode = document.createTextNode("Régional");
@@ -171,7 +171,6 @@ function grad_two() {
   txtindic.setAttributeNS(null, "font-family", "Montserrat");
   txtindic.setAttributeNS(null, "font-weight", "800");
   txtindic.setAttributeNS(null, "fill", "white");
-  txtindic.setAttributeNS(null, "filter", "white");
 
   txtindic.classList.add("shadow");
 
@@ -289,9 +288,12 @@ function grad_two() {
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
 
-v  shapeR.ry.baseVal.value = 2;
+  shapeR.ry.baseVal.value = 2;
+  
 
   shapeR.y.baseVal.value = 25;
+  shapeR.x.baseVal.value = 5;
+
   shapeR.width.baseVal.value = 200;
   shapeR.height.baseVal.value = 2 * 25;
 
@@ -803,8 +805,7 @@ function gradientgauge() {
   }
 }
 
-testgauge();
-legend();
+
 
 function legend() {
   var svgns = "http://www.w3.org/2000/svg";
@@ -885,7 +886,6 @@ function legend() {
 
   div.appendChild(svg1);
 }
-legend();
 
 function svgconverter(id) {
   var svgtoconvert =
