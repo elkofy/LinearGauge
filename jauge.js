@@ -386,8 +386,12 @@ function grad_three() {
   var newText2 = document.createElementNS(svgns, "text");
   newText2.setAttributeNS(null, "x", 130);
   newText2.setAttributeNS(null, "y", 87);
-  newText2.classList.add("shadow");
-  newText2.classList.add("text");
+  newText2.setAttributeNS(null, "font-size", "11");
+  newText2.setAttributeNS(null, "font-family", "Montserrat");
+  newText2.setAttributeNS(null, "font-weight", "800");
+  newText2.setAttributeNS(null, "fill", "white");
+  // newText2.classList.add("shadow");
+  // newText2.classList.add("text");
 
   var textNode2 = document.createTextNode(refs.Inter.toString());
   newText2.appendChild(textNode2);
@@ -521,7 +525,7 @@ function grad_four() {
   newText.setAttributeNS(null, "font-weight", "800");
   newText.setAttributeNS(null, "fill", "white");
 
-  // newText.classList.add("shadow");
+   //newText.classList.add("shadow");
   // newText.classList.add("text");
 
   var txtindic = document.createElementNS(svgns, "text");
@@ -579,6 +583,7 @@ function grad_four() {
 
   shapeC.setAttributeNS(null, "stroke", "black");
   shapeC.setAttributeNS(null, "stroke-width", "3");
+
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
     let stop = document.createElementNS(svgns, "stop");
@@ -589,6 +594,7 @@ function grad_four() {
   }
   polygon.setAttributeNS(null, "fill", "white");
   polygon.setAttributeNS(null, "stroke", "black");
+  
   shapeRgrad.id = "Gradient5";
   shapeRgrad.setAttribute("x1", "0");
   shapeRgrad.setAttribute("x2", "1");
