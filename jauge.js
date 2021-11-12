@@ -110,7 +110,7 @@ function grad_one() {
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
 
-  shapeR.x.baseVal.value = 0;
+  shapeR.x.baseVal.value = 5;
   shapeR.ry.baseVal.value = 2;
 
   shapeR.y.baseVal.value = 25;
@@ -162,7 +162,7 @@ function grad_two() {
   newText.setAttributeNS(null, "font-weight", "800");
   newText.setAttributeNS(null, "fill", "white");
   // newText.classList.add("text");
-  // newText.classList.add("shadow");
+
 
   txtindic.setAttributeNS(null, "x", 35);
   txtindic.setAttributeNS(null, "y", 54);
@@ -171,6 +171,10 @@ function grad_two() {
   txtindic.setAttributeNS(null, "font-family", "Montserrat");
   txtindic.setAttributeNS(null, "font-weight", "800");
   txtindic.setAttributeNS(null, "fill", "white");
+  txtindic.setAttributeNS(null, "filter", "white");
+
+  txtindic.classList.add("shadow");
+
   var txtindicNode = document.createTextNode("Régional");
   txtindic.appendChild(txtindicNode);
 
@@ -182,7 +186,7 @@ function grad_two() {
   txtindic2.setAttributeNS(null, "font-weight", "800");
   txtindic2.setAttributeNS(null, "fill", "white");
   // txtindic2.classList.add("text");
-  // txtindic2.classList.add("shadow");
+  txtindic2.classList.add("shadow");
 
   var txtindic2Node = document.createTextNode("National");
   txtindic2.appendChild(txtindic2Node);
@@ -197,8 +201,10 @@ function grad_two() {
   newText2.setAttributeNS(null, "font-family", "Montserrat");
   newText2.setAttributeNS(null, "font-weight", "800");
   newText2.setAttributeNS(null, "fill", "white");
+  //newText2.setAttributeNS(null, "-webkit-filter", "drop-shadow( 1px 2px 3px rgba(0.4, 0.8, 0.6, .9))");
+
   // newText2.classList.add("text");
-  // newText2.classList.add("shadow");
+ newText2.classList.add("shadow");
 
   var textNode2 = document.createTextNode(refs.Nat.toString());
   newText2.appendChild(textNode2);
@@ -283,8 +289,7 @@ function grad_two() {
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
 
-  shapeR.x.baseVal.value = 0;
-  shapeR.ry.baseVal.value = 2;
+v  shapeR.ry.baseVal.value = 2;
 
   shapeR.y.baseVal.value = 25;
   shapeR.width.baseVal.value = 200;
@@ -458,7 +463,7 @@ function grad_three() {
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
 
-  shapeR.x.baseVal.value = 0;
+  shapeR.x.baseVal.value = 5;
   shapeR.ry.baseVal.value = 2;
 
   shapeR.y.baseVal.value = 25;
@@ -596,7 +601,7 @@ function grad_four() {
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
 
-  shapeR.x.baseVal.value = 0;
+  shapeR.x.baseVal.value = 5;
   shapeR.ry.baseVal.value = 2;
 
   shapeR.y.baseVal.value = 25;
@@ -750,7 +755,7 @@ function grad_five() {
   shapeR.setAttribute("width", strR);
   shapeR.setAttribute("height", "40px");
 
-  shapeR.x.baseVal.value = 0;
+  shapeR.x.baseVal.value = 5;
   shapeR.ry.baseVal.value = 2;
   shapeR.y.baseVal.value = 25;
   shapeR.width.baseVal.value = 200;
@@ -890,8 +895,8 @@ function svgconverter(id) {
   var svgcanva = document.createElement("canvas");
   svgcanva.id = "canvas";
   document.body.appendChild(svgcanva);
-  const ctx = svgcanva.getContext("2d");
-  ctx.fillStyle = ("green");
+  var ctx = svgcanva.getContext("2d");
+  ctx.filter = 'drop-shadow( 1px 2px 3px rgba(0.4, 0.8, 0.6, .9))';
 
   v = canvg.Canvg.fromString(ctx, svgtoconvert);
   v.start();
