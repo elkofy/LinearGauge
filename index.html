@@ -4,17 +4,24 @@
     <meta charset="utf-8" />
     <title>jsTree test</title>
     <!-- 2 load the theme CSS file -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css"
     />
-    <link
-    rel="stylesheet"
-    href="/gauge.css"
-  />
+    <link rel="stylesheet" href="/gauge.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/canvg@3.0.4/lib/umd.js"
+    ></script>
   </head>
-  <body style="background-color: #000040;">
-    <div id="values" style="width: 200px; clear: both;color: aliceblue;">
+  <body style="background-color: #000040">
+    <div id="values" style="width: 200px; clear: both; color: aliceblue">
       <label for="name">&nbsp;Performance:&nbsp;</label>
       <input id="perf" value="37" type="number" />
 
@@ -35,12 +42,11 @@
       <br />
       <br />
 
-      <button id="btn" onclick="gradientgauge()">Update</button>
+      <button id="btn" onclick="gradientgauge()">🔄</button>
+      <button id="btnsvg" onclick="svgconverter('jauge')">💾</button>
     </div>
-    
-    <div id="legende" >
 
-    </div>
+    <div id="jauge"></div>
     <!-- 3 setup a container element -->
 
     <!-- 4 include the jQuery library -->
@@ -48,7 +54,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <!-- 5 include the minified jstree source -->
     <script src="jauge.js"></script>
- 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

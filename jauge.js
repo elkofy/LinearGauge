@@ -21,9 +21,12 @@ function grad_one() {
   var newText2 = document.createElementNS(svgns, "text");
   newText2.setAttributeNS(null, "x", 130);
   newText2.setAttributeNS(null, "y", 87);
-
-  newText2.classList.add("text");
-  newText2.classList.add("shadow");
+  newText2.setAttributeNS(null, "font-size", "11");
+  newText2.setAttributeNS(null, "font-family", "Montserrat");
+  newText2.setAttributeNS(null, "font-weight", "800");
+  newText2.setAttributeNS(null, "fill", "white");
+  // newText2.classList.add("text");
+  // newText2.classList.add("shadow");
 
   var textNode2 = document.createTextNode(refs.Reg.toString());
   newText2.appendChild(textNode2);
@@ -31,8 +34,12 @@ function grad_one() {
   var txtindic = document.createElementNS(svgns, "text");
   txtindic.setAttributeNS(null, "x", 120);
   txtindic.setAttributeNS(null, "y", 50);
-  txtindic.classList.add("shadow");
-  txtindic.classList.add("text");
+  txtindic.setAttributeNS(null, "font-size", "11");
+  txtindic.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic.setAttributeNS(null, "font-weight", "800");
+  txtindic.setAttributeNS(null, "fill", "white");
+  // txtindic.classList.add("shadow");
+  // txtindic.classList.add("text");
 
   var txtindicNode = document.createTextNode("Régional");
   txtindic.appendChild(txtindicNode);
@@ -75,8 +82,10 @@ function grad_one() {
   shapeMK.x2.baseVal.value = 140;
   shapeMK.y1.baseVal.value = 68;
   shapeMK.y2.baseVal.value = 75;
+  shapeMK.setAttributeNS(null, "stroke", "black");
+  shapeMK.setAttributeNS(null, "stroke-width", "3");
 
-  shapeMK.classList.add("black-stroke");
+  // shapeMK.classList.add("black-stroke");
 
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
@@ -118,8 +127,10 @@ function grad_one() {
   svg1.classList.add("svg-size");
 
   newDiv.appendChild(svg1);
-  var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
+  var currentDiv = document.getElementById("jauge");
+  currentDiv.innerHTML = "";
+
+  currentDiv.append(newDiv);
   console.log("1");
 }
 
@@ -146,24 +157,32 @@ function grad_two() {
 
   newText.setAttributeNS(null, "x", 50);
   newText.setAttributeNS(null, "y", 87);
-  newText.classList.add("text");
-  newText.classList.add("shadow");
+  newText.setAttributeNS(null, "font-size", "11");
+  newText.setAttributeNS(null, "font-family", "Montserrat");
+  newText.setAttributeNS(null, "font-weight", "800");
+  newText.setAttributeNS(null, "fill", "white");
+  // newText.classList.add("text");
+  // newText.classList.add("shadow");
 
   txtindic.setAttributeNS(null, "x", 35);
   txtindic.setAttributeNS(null, "y", 54);
 
-  txtindic.classList.add("text");
-  txtindic.classList.add("shadow");
-
+  txtindic.setAttributeNS(null, "font-size", "11");
+  txtindic.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic.setAttributeNS(null, "font-weight", "800");
+  txtindic.setAttributeNS(null, "fill", "white");
   var txtindicNode = document.createTextNode("Régional");
   txtindic.appendChild(txtindicNode);
 
   var txtindic2 = document.createElementNS(svgns, "text");
   txtindic2.setAttributeNS(null, "x", 120);
   txtindic2.setAttributeNS(null, "y", 54);
-
-  txtindic2.classList.add("text");
-  txtindic2.classList.add("shadow");
+  txtindic2.setAttributeNS(null, "font-size", "11");
+  txtindic2.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic2.setAttributeNS(null, "font-weight", "800");
+  txtindic2.setAttributeNS(null, "fill", "white");
+  // txtindic2.classList.add("text");
+  // txtindic2.classList.add("shadow");
 
   var txtindic2Node = document.createTextNode("National");
   txtindic2.appendChild(txtindic2Node);
@@ -174,9 +193,12 @@ function grad_two() {
   var newText2 = document.createElementNS(svgns, "text");
   newText2.setAttributeNS(null, "x", 130);
   newText2.setAttributeNS(null, "y", 87);
-
-  newText2.classList.add("text");
-  newText2.classList.add("shadow");
+  newText2.setAttributeNS(null, "font-size", "11");
+  newText2.setAttributeNS(null, "font-family", "Montserrat");
+  newText2.setAttributeNS(null, "font-weight", "800");
+  newText2.setAttributeNS(null, "fill", "white");
+  // newText2.classList.add("text");
+  // newText2.classList.add("shadow");
 
   var textNode2 = document.createTextNode(refs.Nat.toString());
   newText2.appendChild(textNode2);
@@ -228,15 +250,16 @@ function grad_two() {
   shapeC.y1.baseVal.value = 68;
   shapeC.y2.baseVal.value = 75;
 
-  shapeC.classList.add("black-stroke");
+  shapeC.setAttributeNS(null, "stroke", "black");
+  shapeC.setAttributeNS(null, "stroke-width", "3");
 
   shapeC2.x1.baseVal.value = 140;
   shapeC2.x2.baseVal.value = 140;
   shapeC2.y1.baseVal.value = 68;
   shapeC2.y2.baseVal.value = 75;
 
-  shapeC2.classList.add("black-stroke");
-
+  shapeC2.setAttributeNS(null, "stroke", "black");
+  shapeC2.setAttributeNS(null, "stroke-width", "3");
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
     let stop = document.createElementNS(svgns, "stop");
@@ -284,8 +307,10 @@ function grad_two() {
   svg1.classList.add("svg-size");
 
   newDiv.appendChild(svg1);
-  var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
+  var currentDiv = document.getElementById("jauge");
+  currentDiv.innerHTML = "";
+  currentDiv.append(newDiv);
+
   console.log(stops);
 
   console.log("2");
@@ -315,14 +340,22 @@ function grad_three() {
 
   newText.setAttributeNS(null, "x", 50);
   newText.setAttributeNS(null, "y", 87);
-  newText.classList.add("text");
-  newText.classList.add("shadow");
+  newText.setAttributeNS(null, "font-size", "11");
+  newText.setAttributeNS(null, "font-family", "Montserrat");
+  newText.setAttributeNS(null, "font-weight", "800");
+  newText.setAttributeNS(null, "fill", "white");
+  // newText.classList.add("text");
+  // newText.classList.add("shadow");
 
   var txtindic = document.createElementNS(svgns, "text");
   txtindic.setAttributeNS(null, "x", 35);
   txtindic.setAttributeNS(null, "y", 54);
-  txtindic.classList.add("shadow");
-  txtindic.classList.add("text");
+  txtindic.setAttributeNS(null, "font-size", "11");
+  txtindic.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic.setAttributeNS(null, "font-weight", "800");
+  txtindic.setAttributeNS(null, "fill", "white");
+  // txtindic.classList.add("shadow");
+  // txtindic.classList.add("text");
 
   var txtindicNode = document.createTextNode("National");
   txtindic.appendChild(txtindicNode);
@@ -330,8 +363,12 @@ function grad_three() {
   var txtindic2 = document.createElementNS(svgns, "text");
   txtindic2.setAttributeNS(null, "x", 110);
   txtindic2.setAttributeNS(null, "y", 54);
-  txtindic2.classList.add("text");
-  txtindic2.classList.add("shadow");
+  txtindic2.setAttributeNS(null, "font-size", "11");
+  txtindic2.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic2.setAttributeNS(null, "font-weight", "800");
+  txtindic2.setAttributeNS(null, "fill", "white");
+  // txtindic2.classList.add("text");
+  // txtindic2.classList.add("shadow");
 
   var txtindic2Node = document.createTextNode("International");
   txtindic2.appendChild(txtindic2Node);
@@ -380,20 +417,22 @@ function grad_three() {
     },
   ];
 
-
   shapeC.x1.baseVal.value = 60;
   shapeC.x2.baseVal.value = 60;
   shapeC.y1.baseVal.value = 69;
   shapeC.y2.baseVal.value = 75;
 
-  shapeC.classList.add("black-stroke");
+  // shapeC.classList.add("black-stroke");
+  shapeC.setAttributeNS(null, "stroke", "black");
+  shapeC.setAttributeNS(null, "stroke-width", "3");
 
   shapeC2.x1.baseVal.value = 140;
   shapeC2.x2.baseVal.value = 140;
   shapeC2.y1.baseVal.value = 69;
   shapeC2.y2.baseVal.value = 75;
 
-  shapeC2.classList.add("black-stroke");
+  shapeC2.setAttributeNS(null, "stroke", "black");
+  shapeC2.setAttributeNS(null, "stroke-width", "3");
 
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
@@ -439,9 +478,9 @@ function grad_three() {
   svg1.classList.add("svg-size");
 
   newDiv.appendChild(svg1);
-  var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
-  console.log("3");
+  var currentDiv = document.getElementById("jauge");
+  currentDiv.innerHTML = "";
+  currentDiv.append(newDiv);
 }
 
 function grad_four() {
@@ -470,15 +509,23 @@ function grad_four() {
 
   newText.setAttributeNS(null, "x", 50);
   newText.setAttributeNS(null, "y", 87);
-  newText.classList.add("shadow");
-  newText.classList.add("text");
+  newText.setAttributeNS(null, "font-size", "11");
+  newText.setAttributeNS(null, "font-family", "Montserrat");
+  newText.setAttributeNS(null, "font-weight", "800");
+  newText.setAttributeNS(null, "fill", "white");
+
+  // newText.classList.add("shadow");
+  // newText.classList.add("text");
 
   var txtindic = document.createElementNS(svgns, "text");
   txtindic.setAttributeNS(null, "x", 30);
   txtindic.setAttributeNS(null, "y", 54);
-
-  txtindic.classList.add("text");
-  txtindic.classList.add("shadow");
+  txtindic.setAttributeNS(null, "font-size", "11");
+  txtindic.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic.setAttributeNS(null, "font-weight", "800");
+  txtindic.setAttributeNS(null, "fill", "white");
+  // txtindic.classList.add("text");
+  // txtindic.classList.add("shadow");
 
   var txtindicNode = document.createTextNode("International");
   txtindic.appendChild(txtindicNode);
@@ -523,8 +570,8 @@ function grad_four() {
   shapeC.y1.baseVal.value = 69;
   shapeC.y2.baseVal.value = 75;
 
-  shapeC.classList.add("black-stroke");
-
+  shapeC.setAttributeNS(null, "stroke", "black");
+  shapeC.setAttributeNS(null, "stroke-width", "3");
   for (var i = 0, length = stops.length; i < length; i++) {
     // Create a <stop> element and set its offset based on the position of the for loop.
     let stop = document.createElementNS(svgns, "stop");
@@ -566,8 +613,10 @@ function grad_four() {
   svg1.classList.add("svg-size");
 
   newDiv.appendChild(svg1);
-  var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
+  var currentDiv = document.getElementById("jauge");
+  currentDiv.innerHTML = "";
+
+  currentDiv.append(newDiv);
   console.log("4");
 }
 
@@ -598,9 +647,14 @@ function grad_five() {
 
   newText2.setAttributeNS(null, "x", cursorvalue - 14);
   newText2.setAttributeNS(null, "y", 15);
- 
-  newText2.classList.add("text");
-  newText2.classList.add("shadow");
+
+  newText2.setAttributeNS(null, "font-size", "11");
+  newText2.setAttributeNS(null, "font-family", "Montserrat");
+  newText2.setAttributeNS(null, "font-weight", "800");
+  newText2.setAttributeNS(null, "fill", "white");
+
+  //newText2.classList.add("text");
+  //newText2.classList.add("shadow");
 
   var textNode2 = document.createTextNode("Record !");
   newText2.appendChild(textNode2);
@@ -614,8 +668,13 @@ function grad_five() {
   txtindic.setAttributeNS(null, "x", 30);
   txtindic.setAttributeNS(null, "y", 54);
 
-  txtindic.classList.add("text");
-  txtindic.classList.add("shadow");
+  txtindic.setAttributeNS(null, "font-size", "11");
+  txtindic.setAttributeNS(null, "font-family", "Montserrat");
+  txtindic.setAttributeNS(null, "font-weight", "800");
+  txtindic.setAttributeNS(null, "fill", "white");
+
+  //txtindic.classList.add("text");
+  //txtindic.classList.add("shadow");
 
   var txtindicNode = document.createTextNode("International");
   txtindic.appendChild(txtindicNode);
@@ -623,10 +682,13 @@ function grad_five() {
   var newText = document.createElementNS(svgns, "text");
   newText.setAttributeNS(null, "x", 50);
   newText.setAttributeNS(null, "y", 87);
+  newText.setAttributeNS(null, "font-size", "11");
+  newText.setAttributeNS(null, "font-family", "Montserrat");
+  newText.setAttributeNS(null, "font-weight", "800");
+  newText.setAttributeNS(null, "fill", "white");
 
-
-  newText.classList.add("text");
-  newText.classList.add("shadow");
+  // newText.classList.add("text");
+  // newText.classList.add("shadow");
 
   var textNode = document.createTextNode(refs.Inter.toString());
   newText.appendChild(textNode);
@@ -641,8 +703,9 @@ function grad_five() {
   shapeC.x2.baseVal.value = 60;
   shapeC.y1.baseVal.value = 68;
   shapeC.y2.baseVal.value = 75;
-
-  newText.classList.add("text");
+  shapeC.setAttributeNS(null, "stroke", "black");
+  shapeC.setAttributeNS(null, "stroke-width", "3");
+  // newText.classList.add("text");
 
   let stops = [
     {
@@ -705,8 +768,9 @@ function grad_five() {
   svg1.classList.add("svg-size");
 
   newDiv.appendChild(svg1);
-  var currentDiv = document.getElementById("div1");
-  document.body.insertBefore(newDiv, currentDiv);
+  var currentDiv = document.getElementById("jauge");
+  currentDiv.innerHTML = "";
+  currentDiv.append(newDiv);
   console.log("5");
 }
 
@@ -733,7 +797,6 @@ function gradientgauge() {
     }
   }
 }
-
 
 testgauge();
 legend();
@@ -818,3 +881,33 @@ function legend() {
   div.appendChild(svg1);
 }
 legend();
+
+function svgconverter(id) {
+  var svgtoconvert =
+    document.getElementById(id).firstChild.firstChild.outerHTML;
+
+    $('canvas').remove();
+  var svgcanva = document.createElement("canvas");
+  svgcanva.id = "canvas";
+  document.body.appendChild(svgcanva);
+  const ctx = svgcanva.getContext("2d");
+  ctx.fillStyle = ("green");
+
+  v = canvg.Canvg.fromString(ctx, svgtoconvert);
+  v.start();
+    downloadCanvas();
+
+}
+
+function downloadCanvas(){
+  var canvas = document.querySelector("#canvas").toDataURL("image/png");
+  /* Création de l'élément Anchor */
+  var a = document.createElement('a');
+  /* Nom du fichier */
+  a.download = "canvas.png";
+  /* Canvas à télécharger */
+  a.href = canvas;
+  /* Clique sur le lien */
+  a.click();
+
+}
