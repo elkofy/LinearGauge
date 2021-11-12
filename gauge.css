@@ -4,3 +4,25 @@
     /* Similar syntax to box-shadow */
 
   }
+
+  /*txtindic.setAttributeNS(null,"font-size","12");
+  txtindic.setAttributeNS(null,"font-family","Montserrat");
+  txtindic.setAttributeNS(null,"font-weight","800");
+  
+  txtindic.setAttributeNS(null,"fill","white");
+  */
+  .text{
+    font-size:11px;
+    font-family:"Montserrat";
+    font-weight:800;
+    fill:white;
+  }
+  .black-stroke{
+    stroke:black;
+   stroke-width:3;
+
+  }
+  .svg-size{
+    width:260px;
+    height:100px;
+  }

@@ -13,7 +13,7 @@
     href="/gauge.css"
   />
   </head>
-  <body style="background-color: #000040  ;">
+  <body style="background-color: #000040;">
     <div id="values" style="width: 200px; clear: both;color: aliceblue;">
       <label for="name">&nbsp;Performance:&nbsp;</label>
       <input id="perf" value="37" type="number" />
@@ -30,12 +30,12 @@
       <label for="nat"> &nbsp; niveau national:&nbsp;</label>
       <input id="nat" value="35.5" type="number" />
 
-      <label for="reg"> &nbsp; niveau international:&nbsp;</label>
+      <label for="inter"> &nbsp; niveau international:&nbsp;</label>
       <input id="inter" value="36.7" type="number" />
       <br />
       <br />
 
-      <button onclick="gradientgauge()">Update</button>
+      <button id="btn" onclick="gradientgauge()">Update</button>
     </div>
     
     <div id="legende" >
