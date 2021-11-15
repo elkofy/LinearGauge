@@ -789,11 +789,11 @@ function grad_five() {
 
 function gradientgauge() {
   let refs = {
-    Perf: document.getElementById("perf").value,
-    Reg: document.getElementById("reg").value,
-    Nat: document.getElementById("nat").value,
-    Inter: document.getElementById("inter").value,
-    Record: document.getElementById("record").value,
+    Perf: parseFloat(document.getElementById("perf").value),
+    Reg: parseFloat(document.getElementById("reg").value),
+    Nat: parseFloat(document.getElementById("nat").value),
+    Inter: parseFloat(document.getElementById("inter").value),
+    Record: parseFloat(document.getElementById("record").value),
   };
 
   if (refs.Perf < refs.Reg) {
@@ -802,7 +802,7 @@ function gradientgauge() {
     grad_two();
   } else if (refs.Perf < refs.Inter && refs.Perf >= refs.Nat) {
     grad_three();
-  } else if (refs.Perf > refs.Inter) {
+  } else if (refs.Perf > refs.Inter ) {
     if (refs.Perf > refs.Record) {
       grad_five();
     } else {
